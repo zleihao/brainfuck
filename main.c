@@ -24,9 +24,9 @@ int main(int argv, char *argc[])
     size = ftell(fp);
     fseek(fp, 0, SEEK_SET);
 
-    buffer = (uint8_t *)malloc(sizeof(uint8_t) * (size + 1));
+    buffer = (uint8_t *)malloc(sizeof(uint8_t) * size);
 
-    if (fread(buffer, 1, 2048, fp) != size) {
+    if (fread(buffer, 1, size, fp) != size) {
         printf("读取失败\n");
         free(buffer);
         return -1;
