@@ -5,4 +5,4 @@ set(CMAKE_C_STANDARD 99)
 
 add_compile_options(-Wall)
 
-add_executable(brainfuck ./main.c ./brainfuck.c)
+add_executable(brainfuck ./src/main.c ./src/brainfuck.c)

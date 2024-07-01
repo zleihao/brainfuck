@@ -23,6 +23,6 @@ make
 # 运行
 
 ```bash
-./build/brainfuck ./helloworld.bf
+./build/brainfuck ./example/helloworld.bf
 ```
 
